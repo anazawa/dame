@@ -1,0 +1,27 @@
+{
+    "name": "dame",
+    "author": "anazawa <anazawa@cpan.org>",
+    "description": "sgfgrove toolkit",
+    "version": "0.0.1",
+    "homepage": "https://github.com/anazawa/dame",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/anazawa/dame.git"
+    },
+    "main": "dame.js",
+    "dependencies": {
+        "sgfgrove": "git://github.com/anazawa/sgfgrove.git"
+    },
+    "devDependencies": {
+        "tape": "^3.0.3",
+        "argg": "0.0.1",
+        "jshint": "^2.5.8"
+    },
+    "scripts": {
+        "test": "node node_modules/argg test/test.*.js test/*/test.*.js && node node_modules/jshint/bin/jshint dame.js dame/*.js test/*.js test/*/*.js"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": "*"
+    }
+}
